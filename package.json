@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "art-template": "^3.0.3",
-    "connect": "^3.4.1",
-    "express": "^4.13.4"
+    "connect": "^3.4.1"
   }
 }
