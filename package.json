@@ -1,15 +1,14 @@
 {
-  "name": "node_server",
+  "name": "website_knt",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Lian",
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "art-template": "^3.0.3",
+  "devDependencies": {
     "connect": "^3.4.1"
   }
 }
