@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "connect": "^3.4.1"
+  },
+  "dependencies": {
+    "art-template": "^3.0.3"
   }
 }
