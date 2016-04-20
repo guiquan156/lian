@@ -6,7 +6,8 @@ var connect = require('connect');
 var path = require('path');
 var url = require('url');
 var querystring = require('querystring');
-// var router = require(path.join(MY_MIDWARE_PATH, 'router.js'));
+var router = require('../my_midware/router');
+
 
 /**
 * create connect server
@@ -17,7 +18,7 @@ var app = connect();
 /**
 * use middleware
 */
-// app.use(router(req, res));
+app.use(router);
 
 
 module.exports = app;

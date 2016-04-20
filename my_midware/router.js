@@ -1,7 +1,9 @@
 var fs = require('fs');
 var path = require('path');
+var url = require('url');
+var path = require('path');
 
-function router (req, res){
+module.exports = function (req, res){
 	var pathname = url.parse(req.url).pathname
 	  , pathArr = pathname.split('/')
 	  , arrLength = pathArr.length
@@ -43,4 +45,3 @@ function router (req, res){
 }
 
 
-module.exports = router;
