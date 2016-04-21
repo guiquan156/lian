@@ -12,6 +12,8 @@
     "connect": "^3.4.1"
   },
   "dependencies": {
-    "art-template": "^3.0.3"
+    "art-template": "^3.0.3",
+    "body-parser": "^1.15.0",
+    "jquery-file-upload-middleware": "^0.1.7"
   }
 }

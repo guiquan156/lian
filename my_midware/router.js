@@ -3,11 +3,17 @@ var path = require('path');
 var url = require('url');
 var path = require('path');
 
-module.exports = function (req, res){
+module.exports = function (req, res, next){
 	var pathname = url.parse(req.url).pathname
 	  , pathArr = pathname.split('/')
 	  , arrLength = pathArr.length
 	  , staticArr;
+
+
+
+	//ignore path
+	// if(pathname == '/upload') next();
+
 
 	if(pathname == '/'){
 		// console.log(path.join(ROUTER_PATH, 'index'));
@@ -16,7 +22,8 @@ module.exports = function (req, res){
 	}else if(pathname == '/favicon.ico'){
 		//todo favicon.ico pathname;
 		res.end();
-	}else if(pathname.match('/public/build')){//static resource router
+	}else if(pathname.match('/public')){//static resource router
+
 		fs.readFile(path.join(BASE_PATH, pathname), function(err, data){
 			if(err) throw err;
 

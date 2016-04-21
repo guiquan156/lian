@@ -14,11 +14,12 @@ global.VIEWS_PATH = path.join(BASE_PATH, 'views');
 global.PUBLIC_PATH = path.join(BASE_PATH, 'public');
 global.BUILD_PATH = path.join(PUBLIC_PATH, 'build');
 global.ROUTER_PATH = path.join(BASE_PATH, 'router');
+global.UPLOAD_PATH = path.join(BASE_PATH, 'upload');
 
 
 //get the port, default port is 3000
 function getPort(){
-	return process.env.NODE_PORT || 3000;
+	return process.env.NODE_PORT || 3333;
 }
 //create a server by ./app/app.js
 http.createServer(app).listen(getPort());

@@ -1,1 +1,6 @@
-console.log('index.js loaded successfully!!!');
+$(function(){
+	$('#fileupload').fileupload({
+		dataType: 'json',
+		url: '/upload'
+	});
+})

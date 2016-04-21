@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="{{public_path}}/css/index/index.css">
+		<link rel="stylesheet" href="{{public_path}}/build/css/index/index.css">
 	</head>	
 	<body>
 		<h1>hahahaha</h1>
 		<h1>{{public_path}}</h1>
-		<script src="{{public_path}}/js/index/index.js"></script>
+
+
+		<form action="/index/upload" method="POST">
+			<input type="file" name="file"><br />
+			<input type="submit">
+		</form>
+
+
+
+
+		<!-- <input id="fileupload" type="file" name="files[]" data-url="/upload" multiple> -->
+		<!--<script src="{{public_path}}/script/jquery.min.js"></script>-->
+		<!--<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.js"></script>
+		<script src="{{public_path}}/script/jquery.fileupload.js"></script>
+		<script src="{{public_path}}/build/js/index/index.js"></script>-->
 	</body>
 </html>
