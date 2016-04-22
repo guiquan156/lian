@@ -8,8 +8,10 @@
 		<h1>{{public_path}}</h1>
 
 
-		<form action="/index/upload" method="POST">
-			<input type="file" name="file"><br />
+		<form action="/index/upload" method="POST" enctype="multipart/form-data">
+			<!-- user:<input type="text" name="user"><br /> -->
+			<!-- pwd :<input type="password" name="pwd"><br /> -->
+			<input type="file" name="upload">
 			<input type="submit">
 		</form>
 

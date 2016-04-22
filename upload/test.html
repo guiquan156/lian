@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#haha {
+				width: 100px;	
+				height: 100px;
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="" method="get">
+			<input type="checkbox" value="1" name="checkbox1" id="checkbox1"><label for="checkbox1">checkbox1</label><br />
+			<input type="checkbox" value="2" name="checkbox2" id="checkbox2"><label for="checkbox2">checkbox2</label><br />
+			<input type="submit" value="submit">
+		</form>
+		<a href="http://www.baidu.com">baidu</a>
+		<div id="haha"></div>
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+			// var oCheckbox1 = document.getElementById('checkbox1');
+			// oCheckbox1.onclick = function(event){
+			// 		event.preventDefault();
+			// };
+			// var oA = document.getElementsByTagName('a')[0];
+			// oA.onclick = function(event){
+			// 	event.preventDefault();
+			// }
+
+			var $haha = $('#haha');
+			$haha.on('click', function(){
+				$(this).attr('class', 'hehe');
+				$(this).css('background-color', 'red');
+				console.log($haha.css('background-color'));
+				console.log($haha.attr('class'));
+			});
+		</script>
+	</body>
+</html>

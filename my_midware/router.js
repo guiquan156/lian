@@ -1,7 +1,6 @@
 var fs = require('fs');
 var path = require('path');
 var url = require('url');
-var path = require('path');
 
 module.exports = function (req, res, next){
 	var pathname = url.parse(req.url).pathname
