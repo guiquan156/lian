@@ -4,7 +4,7 @@
 */
 var connect = require('connect');
 var path = require('path');
-var url = require('url');
+
 var querystring = require('querystring');
 var router = require('../my_midware/router');
 
