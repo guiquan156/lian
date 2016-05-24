@@ -6,11 +6,9 @@ var connect = require('connect');
 var path = require('path');
 
 var querystring = require('querystring');
-var router = require('../my_midware/router');
+var router = require(MYMIDWARE_PATH + '/router');
 var upload = require('jquery-file-upload-middleware');
 // var bodyParser = require('body-parser');
-
-
 
 /**
 * create connect server
